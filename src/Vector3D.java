@@ -17,4 +17,25 @@ public class Vector3D {
         magnitud = Punto3D.distanciaEntrePuntos(this.puntoInicial, this.puntoFinal);
         return magnitud;
     }
+
+    public void mostrarComponentes() {
+        double x = this.puntoFinal.x - this.puntoInicial.x;
+        double y = this.puntoFinal.y - this.puntoInicial.y;
+        double z = this.puntoFinal.z - this.puntoInicial.z;
+        System.out.println(
+                "Componentes del Vector: (" +
+                x +
+                ", " +
+                y +
+                ", " +
+                z + ")"
+        );
+    }
+
+    @Override
+    public String toString() {
+        String mensaje = "El Vector comienza en el puntoInicial: " + this.puntoInicial;
+        mensaje += " y termina en el puntoFinal: " + this.puntoFinal;
+        return mensaje;
+    }
 }

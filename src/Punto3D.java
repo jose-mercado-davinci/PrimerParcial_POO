@@ -46,4 +46,9 @@ public class Punto3D {
         distancia = Math.sqrt(Math.pow(punto1.x - punto2.x, 2) + Math.pow(punto1.y - punto2.y, 2) + Math.pow(punto1.z - punto2.z, 2));
         return distancia;
     }
+
+    @Override
+    public String toString() {
+        return "(" + this.x + ", " + this.y + ", " + this.z + ")";
+    }
 }
