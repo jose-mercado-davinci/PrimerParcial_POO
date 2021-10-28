@@ -28,6 +28,20 @@ public class main {
         distanciaDesdeOtroPunto = segundoPunto.distanciaDesdeOtroPunto(primerPunto);
         System.out.println("La distancia desde el segundo punto al primer punto es: " + distanciaDesdeOtroPunto);
 
-    }
+        // Instanciar dos Vectores
 
+        Vector3D primerVector = new Vector3D(primerPunto, segundoPunto);
+        Vector3D segundoVector = new Vector3D(tercerPunto);
+
+        // Imprimir los vectores
+
+        System.out.println("Primer Vector: " + primerVector);
+        System.out.println("Su magnitud es: " + primerVector.magnitudVector());
+        primerVector.mostrarComponentes();
+
+
+        System.out.println("Segundo Vector: " + segundoVector);
+        System.out.println("Su magnitud es: " + segundoVector.magnitudVector());
+        segundoVector.mostrarComponentes();
+    }
 }
