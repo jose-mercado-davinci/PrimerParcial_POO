@@ -28,6 +28,8 @@ public class main {
         distanciaDesdeOtroPunto = segundoPunto.distanciaDesdeOtroPunto(primerPunto);
         System.out.println("La distancia desde el segundo punto al primer punto es: " + distanciaDesdeOtroPunto);
 
+        System.out.println("");
+
         // Instanciar dos Vectores
 
         Vector3D primerVector = new Vector3D(primerPunto, segundoPunto);
@@ -39,6 +41,7 @@ public class main {
         System.out.println("Su magnitud es: " + primerVector.magnitudVector());
         primerVector.mostrarComponentes();
 
+        System.out.println("");
 
         System.out.println("Segundo Vector: " + segundoVector);
         System.out.println("Su magnitud es: " + segundoVector.magnitudVector());
