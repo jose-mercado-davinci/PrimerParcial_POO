@@ -11,4 +11,10 @@ public class Vector3D {
         this.puntoInicial = new Punto3D(0, 0, 0);
         this.puntoFinal = puntoFinal;
     }
+
+    public double magnitudVector() {
+        double magnitud;
+        magnitud = Punto3D.distanciaEntrePuntos(this.puntoInicial, this.puntoFinal);
+        return magnitud;
+    }
 }
