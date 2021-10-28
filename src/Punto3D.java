@@ -20,4 +20,18 @@ public class Punto3D {
         this.y = 0;
         this.z = 0;
     }
+
+    public double distanciaDesdeOrigen() {
+
+        return 0;
+    }
+
+    public double distanciaDesdeOtroPunto(double x, double y, double z) {
+
+        return 0;
+    }
+
+    public double distanciaDesdeOtroPunto(Punto3D otroPunto) {
+        return 0;
+    }
 }
